@@ -4,9 +4,8 @@ import React from "react";
 
 
 const Header = () => (
-    <header class="jumbotron">
-        <h1>My Amazing App</h1>
-        <p>It's actually amazing</p>
+    <header className="jumbotron">
+        <h1>Hello World</h1>
     </header>
 );
 
