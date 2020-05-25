@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 const Figure = {{ }} => (
     <figure className="card">
 

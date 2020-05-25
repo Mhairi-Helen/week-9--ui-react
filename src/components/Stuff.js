@@ -6,14 +6,18 @@ import Square from './Square';
 import People from './People';
 
 
-const Stuff = () => (
+const Stuff = ({ square }) => (
     <>
-        <Header />
-        <Paragraph />
-        <Square />
+        <Header >Hello World</Header>
+        <Paragraph >Lorem ipsum dolor sit amet consectetur adipisicing elit. A non quis nobis illum eveniet impedit ipsa dicta minus suscipit cum, doloribus ea accusantium unde, quas eum porro ipsam earum! Voluptas.</Paragraph>
+        {!square ? (<Square color={"hotpink"} />) : null}
         <People />
     </>
-
 );
+
+
+Stuff.defaulProps = {
+    square: true,
+};
 
 export default Stuff;
