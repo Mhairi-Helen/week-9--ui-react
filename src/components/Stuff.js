@@ -9,6 +9,8 @@ import CatchMeIfYouCan from "./CatchMeIfYouCan";
 import ToggleText from "./ToggleText";
 import Counter from "./Counter";
 import RollCall from "./RollCall";
+import Length from "./Forms/Length";
+import PasswordStrength from "./Forms/PasswordStrength";
 
 const Stuff = ({ square }) => (
   <>
@@ -35,6 +37,8 @@ const Stuff = ({ square }) => (
         "Fungus",
       ]}
     />
+    <Length label={"Name:"} />
+    <PasswordStrength label={"Password"} />
   </>
 );
 

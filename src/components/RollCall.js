@@ -14,7 +14,7 @@ class RollCall extends Component {
     }
 
 
-    //
+    //updating the state when events are fired
     handleClick() {
         let { names } = this.props;
 
