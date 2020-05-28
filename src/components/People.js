@@ -6,6 +6,7 @@ let names = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz"
 
 
 class People extends Component {
+
     constructor(props) {
         super(props);
     };
