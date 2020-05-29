@@ -4,7 +4,8 @@ import React from "react";
 import Header from "../components/Header";
 import Paragraph from "../components/Paragraph";
 import Multiplier from "./Multiplier";
-import EvenClicks from "./EvenClicks"
+import EvenClicks from "./EvenClicks";
+import CountBy from "./CountBy";
 
 
 const Quiz = () => (
@@ -18,6 +19,7 @@ const Quiz = () => (
         </Paragraph>
         <Multiplier x={5} y={7} />
         <EvenClicks />
+        <CountBy step={5} />
 
     </>
 );

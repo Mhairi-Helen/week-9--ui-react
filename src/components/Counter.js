@@ -20,7 +20,7 @@ class Counter extends Component {
     handleClickPlus() {
         let current = this.state.counter;
 
-        if (this.state.counter < this.props.max) {
+        if (current < this.props.max) {
             this.setState({ counter: current + 1 });
         };
     }
@@ -28,16 +28,18 @@ class Counter extends Component {
     handleClickMinus() {
         let current = this.state.counter;
 
-        if (this.state.counter > this.props.initial) {
+        if (current > this.props.initial) {
             this.setState({ counter: current - 1 });
         };
     }
 
     //render is about rendering what the user is seeing
     render() {
+
+        let { counter } = this.state
         return (
             <div className="card">
-                <h1>{this.state.counter}</h1>
+                <h1>{counter}</h1>
                 <button
                     onClick={this.handleClickPlus}
                     type="button" className="btn btn-info">
