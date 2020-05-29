@@ -14,24 +14,36 @@ class Length extends Component {
   }
 
 
+
+
   // e is the standard DOM event object
   handleChange(e) {
     // e.currentTarget: DOM element we attached the event handler to use the value property to read its current value
     this.setState({ input: e.currentTarget.value });
   }
 
+
+
+
+
+
   render() {
+    //Where we reference this.state and this.props a lot its a good place to destructure them instead and save us some extra code (ie. Length.js)
+
+    let { label, name } = this.props;
+    let { input } = this.state;
+
     return (
       <div className='form-group'>
-        <label >{this.props.label}</label>
+        <label >{label}</label>
         <input
           className='form-control'
           onChange={this.handleChange}
           placeholder={'Enter name...'}
-          value={this.state.input}
-          name={this.props.name} />
+          value={input}
+          name={name} />
         <p className='form-text text-muted'>
-          Length: {this.state.input.length} characters
+          Length: {input.length} characters
         </p>
       </div>
     );

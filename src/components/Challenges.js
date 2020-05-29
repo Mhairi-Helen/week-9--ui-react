@@ -1,6 +1,5 @@
 import React from "react";
 
-import Header from "./Header";
 import Paragraph from "./Paragraph";
 import Square from "./Square";
 import People from "./People";
@@ -15,7 +14,7 @@ import PasswordStrength from "./Forms/PasswordStrength";
 const Challenges = ({ square }) => (
   <>
     <CatchMeIfYouCan jump={100} />
-    <Header>Hello World</Header>
+
     <Paragraph>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. A non quis nobis
       illum eveniet impedit ipsa dicta minus suscipit cum, doloribus ea

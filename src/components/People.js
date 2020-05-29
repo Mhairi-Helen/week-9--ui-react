@@ -7,9 +7,9 @@ let names = ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz"
 
 class People extends Component {
 
-    constructor(props) {
-        super(props);
-    };
+    // constructor(props) {
+    //     super(props);
+    // };
 
     handleClick() {
         console.log("hello world");
