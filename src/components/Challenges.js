@@ -12,7 +12,7 @@ import RollCall from "./RollCall";
 import Length from "./Forms/Length";
 import PasswordStrength from "./Forms/PasswordStrength";
 
-const Stuff = ({ square }) => (
+const Challenges = ({ square }) => (
   <>
     <CatchMeIfYouCan jump={100} />
     <Header>Hello World</Header>
@@ -42,8 +42,8 @@ const Stuff = ({ square }) => (
   </>
 );
 
-Stuff.defaulProps = {
+Challenges.defaulProps = {
   square: true,
 };
 
-export default Stuff;
+export default Challenges;

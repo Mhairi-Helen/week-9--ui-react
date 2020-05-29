@@ -1,5 +1,11 @@
-import React from 'react';
+import React, { Fragement } from 'react';
 import './App.css';
+
+//importing ReactRouter components to use the functionality
+import {
+  BrowserRouter as Router,
+  Route,
+} from "react-router-dom";
 
 
 
